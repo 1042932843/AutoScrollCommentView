@@ -9,9 +9,7 @@ import android.os.Handler
 import android.os.Message
 import android.util.AttributeSet
 import android.view.View
-import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.util.Pools
 import com.view.R
@@ -101,7 +99,7 @@ class AutoPopCommentView : FrameLayout {
                 0 -> {
                     val view: View = obtainView(datas[indexData])
                     mlayout.addView(view)
-                    sendEmptyMessageDelayed(0, 2000)
+                    sendEmptyMessageDelayed(0, 1000)
                     indexView++
                     indexData++
                     if (indexView == 4) {
