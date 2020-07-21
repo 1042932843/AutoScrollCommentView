@@ -1,18 +1,12 @@
 package com.view.widget
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.MotionEvent
+import androidx.recyclerview.widget.RecyclerView
 
-/**
- * 项目名称:AutoVerticalRollRecyclerView
- * Author：mj
- * Time: 2018/10/9 16:27
- * 描述：自定义自动垂直滚动的RecyclerView
- * Version:
- */
-class AutoVerticalRollRecyclerView @JvmOverloads constructor(
+
+class AutoScrollCommentRecyclerView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : RecyclerView(context, attrs, defStyleAttr), Runnable {
 
@@ -56,7 +50,7 @@ class AutoVerticalRollRecyclerView @JvmOverloads constructor(
 
 
     override fun run() {
-        if(this!=null&&this.mIsRolling){
+        if(this.mIsRolling){
             scrollBy(0,2)
             postDelayed(this,30)
         }

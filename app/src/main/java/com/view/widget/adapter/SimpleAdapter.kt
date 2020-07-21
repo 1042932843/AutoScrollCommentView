@@ -1,18 +1,12 @@
-package com.view.adapter
+package com.view.widget.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.view.R
 
-/**
- * 项目名称:AutoVerticalRollRecyclerView
- * Author：mj
- * Time: 2018/10/9 15:13
- * 描述：RecyclerView的Adapter
- * Version:
- */
+
 class SimpleAdapter(list: MutableList<String>, mContext: Context) : RecyclerView.Adapter<SimpleAdapterViewHolder>() {
 
     /**数据源*/

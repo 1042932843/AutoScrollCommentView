@@ -1,8 +1,8 @@
-package com.view.adapter
+package com.view.widget.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.view.R
 
 
