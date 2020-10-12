@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        autoPopCommentView.onResume()
+        autoPopCommentView.onStart()
     }
 
     override fun onPause() {

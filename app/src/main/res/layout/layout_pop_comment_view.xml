@@ -8,6 +8,7 @@
     android:animateLayoutChanges="true"
     android:divider="@drawable/divider"
     android:showDividers="middle"
+    android:layout_gravity="bottom"
     >
 
 </LinearLayout>

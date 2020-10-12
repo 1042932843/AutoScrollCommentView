@@ -70,6 +70,7 @@ class AutoPopCommentView : FrameLayout {
 
     fun setViewListData(datas: ArrayList<TestData>) {
         this.datas = datas
+        onStart()
     }
 
     @SuppressLint("SetTextI18n")
@@ -117,7 +118,7 @@ class AutoPopCommentView : FrameLayout {
         }
     }
 
-    fun onResume() {
+    fun onStart() {
         handler.sendEmptyMessage(0)
     }
 
